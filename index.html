@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dad Joke Generator</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="flex flex-col min-h-screen font-normal">
+        <main class="flex flex-col items-center justify-center flex-grow px-10">
+            <h1 class="md:text-3xl my-1 text-2xl tracking-widest text-center">Random Dad Joke Generator</h1>
+            <p class="mb-4 text-center">Enjoy this joke on us. Click the button to see another joke.
+            </p>
+            <section id="joke" class="h-auto p-12 mb-6 border border-gray-300 rounded-md">
+                <p class="italic" id="joke-text"></p>
+            </section>
+            <button id='generate-joke' class='px-3 py-2 text-white bg-purple-600 rounded' type="button">Get a new joke
+            </button>
+        </main>
+
+        <footer class="py-3 text-center text-white bg-purple-600">&copy; 2020 <a
+                class="hover:text-yellow-400 text-yellow-300 transition-all duration-500" href="https://ritabradley.dev"
+                target="_blank" rel="noreferrer noopener">Rita
+                Bradley</a>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>
